@@ -1,13 +1,20 @@
 doctype html
 html
   head
-    meta(charset='utf-8')      
+  
+    meta(charset='utf-8')   
+    
     title Evan
+    
+    link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
+    
   body
     
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/lodash/lodash.min.js')
+    script(src='/vendor/angular/angular.min.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.css')
     script(src=isProd ? '/index.min.js' : '/index.js')
